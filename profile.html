@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Care Global is a site that lets you donate to a number of charities at the same time">
+    <link rel="stylesheet" href="partials/main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Kreon:wght@400;500;700&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon_package_v0.16/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon_package_v0.16/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon_package_v0.16/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon_package_v0.16/site.webmanifest">
+    <link rel="mask-icon" href="img/favicon_package_v0.16/safari-pinned-tab.svg" color="#be195c">
+    <meta name="msapplication-TileColor" content="#2d89ef">
+    <meta name="theme-color" content="#ffffff">
+    <script src="https://kit.fontawesome.com/aaba5ad25b.js" crossorigin="anonymous"></script>
+    <title>Care Global - Donations list</title>
+</head>
+<body>
+    <header>
+        <h1 class="logo"><a href="index.html">Care Global</a></h1>
+        <nav>
+            <ul>
+                <li><a href="howItWorks.html">How it works</a></li>
+                <li><a href="profile.html"><i class="fas fa-user"></i></a></li>
+            </ul>
+            <button class="signUpBtn">Sign Up</button>
+        </nav>
+    </header>
+    <div class="alert"></div>
+    <main>
+        <div class="waves">
+            <img class="wavesBackground" src="img/wavesOpacity.svg" alt="Background of green waves">
+        </div>
+    <section class="yourDonations">
+        <h2>Your donation list</h2>
+        <div class="youDonations--header">
+            <h3>Total monthly payment</h3>
+            <input type="number" id="totalAmount" name="totalAmount">
+        </div>
+        <div class="yourDonations--list">
+            <div class="list--item1">
+                <img class="orgImg" src="https://acta.no/content/uploads/sites/11/2020/12/ActaNormisjon_ogiginal-1024x415.png">
+                <h3 class="orgName">ACTA - BARN OG UNGE I NORMISJON</h3>
+                <label for="percentage">%</label>
+                <select name="percentage" id="percentage">
+                    <option value="20">10</option>
+                    <option value="20">20</option>
+                    <option value="30">30</option>
+                    <option value="40">40</option>
+                    <option value="50">50</option>
+                    <option value="60">60</option>
+                    <option value="70">70</option>
+                    <option value="80">80</option>
+                    <option value="90">90</option>
+                    <option value="100">100</option>
+                <label for="calculatedSum">KR</label>
+                <input type="text" id="calculatedSum" name="calculatedSum">
+            </div>
+            <div class="list--item2">
+                <img class="orgImg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/DNT_Logo.svg/1200px-DNT_Logo.svg.png">
+                <h3 class="orgName">DEN NORSKE TURISTFORENING</h3>
+                <label for="percentage">%</label>
+                <select name="percentage" id="percentage">
+                    <option value="20">10</option>
+                    <option value="20">20</option>
+                    <option value="30">30</option>
+                    <option value="40">40</option>
+                    <option value="50">50</option>
+                    <option value="60">60</option>
+                    <option value="70">70</option>
+                    <option value="80">80</option>
+                    <option value="90">90</option>
+                    <option value="100">100</option>
+                <label for="calculatedSum">KR</label>
+                <input type="text" id="calculatedSum" name="calculatedSum">
+            </div>
+            <div class="list--item3">
+                <img class="orgImg" src="https://kommunikasjon.ntb.no/data/images/00299/ae4a6654-91f0-4c64-a337-bc7336d7d12d.png/social">
+                <h3 class="orgName">FRELSESARMEEN</h3>
+                <label for="percentage">%</label>
+                <select name="percentage" id="percentage">
+                    <option value="20">10</option>
+                    <option value="20">20</option>
+                    <option value="30">30</option>
+                    <option value="40">40</option>
+                    <option value="50">50</option>
+                    <option value="60">60</option>
+                    <option value="70">70</option>
+                    <option value="80">80</option>
+                    <option value="90">90</option>
+                    <option value="100">100</option>
+                <label for="calculatedSum">KR</label>
+                <input type="text" id="calculatedSum" name="calculatedSum">
+            </div>
+        </div>
+    </section>
+    <section class="paymentSection">
+        <h3 class="paymentHeader">Payment methods</h3>
+        <div class="paymentOptions">
+            <img class="paymentImg" src="img/logo-mastercard-mobile.svg">
+            <img class="paymentImg" src="img/visa.png">
+            <img class="paymentImg" src="img/vipps.png">
+            <img class="paymentImg" src="img/paypal.png">
+        </div>
+    </section>
+    </main>
+    <div class="waves">
+        <img class="wavesBackground_footer" src="img/wavesOpacity.svg" alt="Background of green waves">
+    </div>
+    <footer>
+        <p class="footerText">Martin Bolsønes &copy; 2021</p>
+    </footer>
+    <script src="js/components/alert.js"></script>
+    <script src="js/profile.js"></script>
+</body>
+</body>
+</html>

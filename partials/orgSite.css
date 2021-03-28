@@ -1,0 +1,104 @@
+main {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.orgSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.orgContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.orgContainer--img {
+  width: 40%;
+}
+
+.orgContainer--text {
+  width: 60%;
+  font-size: 1.5rem;
+  line-height: 2.3rem;
+}
+
+.visitSiteLink {
+  padding: 5px;
+  border: solid 1px var(--gray);
+  border-radius: 5px;
+}
+
+.oneTimeDonation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.btnDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#orgSitedonateBtn {
+  width: 20%;
+  height: 40px;
+  border: solid 1px var(--gray);
+  border-radius: 10px;
+  background-color: var(--primary-pink);
+  color: var(--white);
+  font-size: 1.5rem;
+  box-shadow: 1px 1px var(--gray);
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.addToListBtn {
+  width: 25%;
+  height: 25px;
+  background-color: var(--primary-green);
+  color: var(--white);
+  border: solid 0.5px var(--gray);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.oneTimeDonation--heading {
+  margin-bottom: 50px;
+}
+
+.amountOptions {
+  display: flex;
+  flex-direction: row;
+}
+
+.radioLabel {
+  margin: 20px;
+  border: solid 2px var(--gray);
+  border-radius: 10px;
+  padding: 20px;
+  height: 40px;
+  text-align: center;
+  box-shadow: 0.5px 0.5px var(--gray);
+  background-color: white;
+}
+
+.customAmountDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+#customAmount {
+  height: 30px;
+  margin-top: 5px;
+}

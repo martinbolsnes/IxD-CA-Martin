@@ -1,0 +1,84 @@
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 80px;
+  background: rgb(51, 51, 51);
+  background: linear-gradient(
+    180deg,
+    rgba(51, 51, 51, 1) 80%,
+    rgba(0, 113, 91, 1) 100%
+  );
+  width: 100%;
+}
+
+h1 {
+  font-family: 'Indie Flower', cursive;
+  display: flex;
+  align-items: center;
+  margin-left: 150px;
+  font-size: 3rem;
+}
+
+h1 a {
+  color: var(--white);
+  list-style: none;
+  text-decoration: none;
+  text-shadow: 2px 2px var(--black);
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 1.5rem;
+  margin-right: 150px;
+}
+
+nav ul {
+  list-style: none;
+  font-family: 'Kreon', serif;
+}
+
+ul li {
+  display: inline-block;
+  align-items: center;
+}
+
+li a {
+  text-decoration: none;
+  color: var(--white);
+  padding: 10px;
+  text-shadow: 2px 2px var(--black);
+}
+
+.fa-user {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: var(--primary-pink);
+  cursor: pointer;
+}
+
+.loginBtn,
+.signUpBtn {
+  border-radius: 5px;
+  margin-left: 10px;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.2rem;
+  height: 45%;
+  width: 90px;
+  cursor: pointer;
+  box-shadow: 2px 2px var(--black);
+}
+
+.loginBtn {
+  background-color: var(--white);
+  color: var(--primary-pink);
+  border: solid 2px var(--primary-pink);
+}
+
+.signUpBtn {
+  background-color: var(--primary-pink);
+  color: var(--white);
+  border: solid 2px var(--white);
+}

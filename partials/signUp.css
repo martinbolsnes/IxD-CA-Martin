@@ -1,0 +1,76 @@
+main {
+  width: 100%;
+}
+
+.signUpSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.signUpForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+}
+
+.inputField {
+  width: 40%;
+  margin-bottom: 20px;
+  height: 30px;
+  border-radius: 10px;
+  border: solid 2px var(--gray);
+  box-shadow: 1px 0.5px var(--gray);
+}
+
+.inputField:hover {
+  border: solid 2px var(--primary-green);
+  box-shadow: 1px 0.5px var(--primary-green);
+}
+
+#submitBtn {
+  width: 20%;
+  height: 35px;
+  background: rgb(0, 113, 91);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 113, 91, 1) 50%,
+    rgba(3, 155, 127, 1) 100%
+  );
+  border-radius: 10px;
+  border: solid 1px var(--gray);
+  color: var(--white);
+  box-shadow: 1px 0.5px var(--gray);
+  cursor: pointer;
+  font-weight: bolder;
+}
+
+#submitBtn:hover {
+  background: var(--white);
+  border: solid 2px var(--primary-green);
+  color: var(--primary-green);
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.nameError,
+.emailError,
+.passwordError {
+  color: var(--primary-pink);
+  margin-top: -12px;
+  background-color: var(--white);
+  border: none;
+  padding: 0;
+  transition: none;
+}

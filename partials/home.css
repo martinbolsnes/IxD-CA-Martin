@@ -1,0 +1,189 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--white);
+  overflow-x: hidden;
+}
+
+main {
+  display: grid;
+  grid-template-areas:
+    'waves waves'
+    'heroSection heroSection'
+    'exploreHeading exploreHeading'
+    'charityCards'
+    'exploreMoreDiv';
+  display: flex;
+  flex-direction: column;
+}
+
+.waves {
+  grid-area: waves;
+}
+
+.heroSection {
+  grid-area: heroSection;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 400px;
+  margin-top: -20px;
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+.heroHeading {
+  width: 50%;
+}
+
+h2 {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: lighter;
+  margin-top: 20px;
+  font-size: 2.5rem;
+}
+
+.welcomeHeading {
+  font-family: 'Indie Flower', cursive;
+  color: var(--primary-pink);
+  font-size: 6rem;
+  text-shadow: 1px 1px var(--black);
+  margin-bottom: 30px;
+}
+
+.heroText {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  width: 80%;
+}
+
+.heroBtns {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.signUpCTA {
+  background: rgb(190, 25, 92);
+  background: linear-gradient(
+    180deg,
+    rgba(190, 25, 92, 1) 50%,
+    rgba(219, 94, 144, 1) 100%
+  );
+  height: 70px;
+  width: 300px;
+  border-radius: 15px;
+  color: var(--white);
+  font-size: 1.2rem;
+  text-shadow: 2px 2px var(--gray);
+  border: solid 2px var(--gray);
+  box-shadow: 2px 2px 3px var(--gray);
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.signUpCTA:hover {
+  background: var(--white);
+  border: solid 2px var(--primary-pink);
+  color: var(--primary-pink);
+  text-shadow: none;
+}
+
+.howItWorksBtn {
+  background-color: var(--white);
+  border: solid 2px var(--gray);
+  border-radius: 5px;
+  height: 30px;
+  width: 150px;
+  color: var(--gray);
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.exploreHeading {
+  grid-area: exploreHeading;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.exploreHeader {
+  font-family: 'Kreon', serif;
+}
+
+.error {
+  background-color: rgb(255 124 124);
+  color: white;
+  border: solid 1px red;
+  padding: 20px;
+  transition: 2s;
+  display: none;
+}
+
+.charityCards {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-left: 150px;
+  margin-right: 150px;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 27%;
+  height: 400px;
+  border: solid 2px var(--gray);
+  border-radius: 20px;
+  box-shadow: 1px 1px 2px var(--gray);
+  background-color: white;
+}
+
+h3 {
+  font-size: 1.1rem;
+}
+
+.card_img {
+  border-radius: 20px;
+  width: 95%;
+  height: 200px;
+}
+
+#readMoreBtn {
+  background-color: var(--primary-pink);
+  text-decoration: none;
+  border: none;
+  padding: 10px;
+  color: var(--white);
+  border-radius: 5px;
+  font-size: 1rem;
+  text-shadow: 0.5px 0.5px var(--gray);
+  box-shadow: 0.5px 1px 1px var(--gray);
+  cursor: pointer;
+}
+
+.exploreMoreDiv {
+  grid-area: exploreMoreDiv;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.exploreMoreBtn {
+  width: 20%;
+  height: 50px;
+  margin-top: 30px;
+  border: solid 2px var(--gray);
+  border-radius: 15px;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.3rem;
+  box-shadow: 1px 1px 0.5px var(--gray);
+  cursor: pointer;
+}
